@@ -17,7 +17,8 @@ import cameron from '../../assets/cameron.png'
 
 const Sidebar = ({sidebar,category,setcategory}) => {
   return (
-    <div className={`sidebar ${sidebar?"":"small-sidebar"}`}>
+<div className={`sidebar ${sidebar ? "open" : "small-sidebar"}`}>
+
      <div className="shortcut-link">
       <div className={`side-links ${category===0?"active":" "}`}onClick={()=>setcategory(0)}>
        <img src={home} alt="" /><p>Home</p>
