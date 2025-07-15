@@ -1,10 +1,19 @@
-.container{
+.container {
     background: #f9f9f9;
-    padding-left:17%;
-    padding-right:2%;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-left: 240px;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: padding-left 0.3s ease;
 }
-.large-container{
-   padding-left:7%; 
+
+.large-container {
+    padding-left: 72px;
+}
+
+/* Ensure content adjusts on small screens */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 72px;
+    }
 }

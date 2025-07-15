@@ -4,6 +4,27 @@
   padding: 2rem;
   text-align: center;
 }
+.app-layout {
+  display: flex;
+}
+
+.sidebar {
+  transition: width 0.3s ease;
+}
+
+.main-content {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-open {
+  margin-left: 15%;
+}
+
+.sidebar-closed {
+  margin-left: 5%;
+}
+
 
 .logo {
   height: 6em;
